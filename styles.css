@@ -164,6 +164,7 @@ body {
 }
 .edu-item h3 { font-size: 17px; font-weight: 700; }
 .edu-item p { color: var(--muted); font-size: 14.5px; }
+.edu-detail { font-size: 13.8px !important; font-style: italic; margin-top: 4px; }
 
 /* ---------- Contact ---------- */
 .contact-box { text-align: center; max-width: 620px; }
