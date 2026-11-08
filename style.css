@@ -282,4 +282,7 @@ li { margin-bottom: 0.3rem; }
   .exp-date {
     align-self: flex-start;
   }
+  .exp-card {
+    padding: 1rem;
+  }
 }
