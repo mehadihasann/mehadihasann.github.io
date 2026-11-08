@@ -125,12 +125,6 @@ li { margin-bottom: 0.3rem; }
 .timeline-content .meta { font-size: 0.88rem; color: var(--text-muted); margin-bottom: 0.5rem; }
 .timeline-content ul { font-size: 0.95rem; }
 
-/* ===== SKILLS ===== */
-.skills-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
-}
-.skills-grid h3 { color: var(--accent); font-size: 1rem; margin-bottom: 0.4rem; }
-.skills-grid ul { font-size: 0.92rem; color: var(--text-muted); }
 
 /* ===== CONTACT ===== */
 .contact-list { list-style: none; margin: 0 0 1.5rem 0; }
@@ -146,7 +140,7 @@ li { margin-bottom: 0.3rem; }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 820px) {
-  .grid-2, .skills-grid { grid-template-columns: 1fr; }
+  .grid-2 { grid-template-columns: 1fr; }
   .nav-links {
     display: none; position: absolute; top: 100%; left: 0; right: 0;
     flex-direction: column; background: #fff; border-bottom: 1px solid var(--border);
@@ -164,4 +158,34 @@ li { margin-bottom: 0.3rem; }
 @media (max-width: 480px) {
   .hero-photo { width: 140px; height: 140px; }
   .section { padding: 2.5rem 0; }
+}
+
+/* ===== ABOUT SKILLS COMPACT ===== */
+.about-skills {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+.about-skills h3 {
+  font-size: 1.1rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+.skills-compact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+.skills-compact-grid strong {
+  color: var(--text);
+  display: block;
+  margin-bottom: 0.3rem;
+}
+@media (max-width: 768px) {
+  .skills-compact-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }
